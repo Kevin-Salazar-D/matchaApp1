@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="12dp"
+    android:background="@color/white">
+
+    <!-- Imagen del producto -->
+    <ImageView
+        android:id="@+id/imgOrderProduct"
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        android:scaleType="centerCrop"
+        android:contentDescription="Imagen del producto"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:src="@drawable/matchaapplogo2" />
+
+    <!-- Nombre del producto -->
+    <TextView
+        android:id="@+id/tvOrderName"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Nombre del producto"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:textColor="#222222"
+        app:layout_constraintTop_toTopOf="@id/imgOrderProduct"
+        app:layout_constraintStart_toEndOf="@id/imgOrderProduct"
+        app:layout_constraintEnd_toStartOf="@id/tvOrderStatus"
+        android:paddingStart="12dp" />
+
+    <!-- Estado de la orden -->
+    <TextView
+        android:id="@+id/tvOrderStatus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Pendiente"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        android:textColor="#FF9800"
+        app:layout_constraintTop_toTopOf="@id/tvOrderName"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:paddingEnd="8dp"/>
+
+    <!-- Precio -->
+    <TextView
+        android:id="@+id/tvOrderPrice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="$99.99"
+        android:textSize="16sp"
+        android:textColor="#444444"
+        app:layout_constraintTop_toBottomOf="@id/tvOrderName"
+        app:layout_constraintStart_toStartOf="@id/tvOrderName"
+        android:paddingTop="4dp"/>
+
+    <!-- Tipo de leche y tamaño -->
+    <TextView
+        android:id="@+id/tvOrderMilkSize"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Leche: Almendra | Tamaño: Grande"
+        android:textSize="14sp"
+        android:textColor="#666666"
+        app:layout_constraintTop_toBottomOf="@id/tvOrderPrice"
+        app:layout_constraintStart_toStartOf="@id/tvOrderName"
+        android:paddingTop="2dp" />
+
+    <!-- Fecha y hora de entrega -->
+    <TextView
+        android:id="@+id/tvOrderDeliveryTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Entrega: 12/06/2025 15:00"
+        android:textSize="14sp"
+        android:textColor="#666666"
+        app:layout_constraintTop_toBottomOf="@id/tvOrderMilkSize"
+        app:layout_constraintStart_toStartOf="@id/tvOrderName"
+        android:paddingTop="2dp" />
+
+    <!-- Ubicación -->
+    <TextView
+        android:id="@+id/tvOrderLocation"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Ubicación: Calle Falsa 123"
+        android:textSize="14sp"
+        android:textColor="#666666"
+        app:layout_constraintTop_toBottomOf="@id/tvOrderDeliveryTime"
+        app:layout_constraintStart_toStartOf="@id/tvOrderName"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:paddingTop="2dp"
+        android:maxLines="1"
+        android:ellipsize="end"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

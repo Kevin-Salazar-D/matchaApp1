@@ -1,0 +1,76 @@
+<resources>
+    <string name="app_name">MatchaApp</string>
+    <string name="descriptionLogo">Logo de MatchaApp</string>
+    <string name="input_name">Usuario</string>
+    <string name="input_password">Contraseña</string>
+    <string name="text_account">¿No tienes cuenta?</string>
+    <string name="btn_start_sesion">Iniciar Sesión</string>
+    <string name="text_create_accout">Crea tu cuenta</string>
+    <string name="inout_phone">Teléfono</string>
+    <string name="welcome_text">Bienvenido</string>
+    <string name="country">País</string>
+    <string name="update_data">Actualizar Datos</string>
+    <string name="finish_session">Cerrar Sesión</string>
+    <string name="user_id">0</string>
+
+    <!-- Nuevos textos para la orden -->
+    <string name="order_title">🧾 Esta es la parte de la orden</string>
+    <string name="product_name_label">Nombre del producto</string>
+    <string name="product_price_label">Precio del producto</string>
+    <string name="order_status_label">Estado de orden:</string>
+    <string name="product_size_label">Tamaño del producto:</string>
+    <string name="product_location_label">Ubicación actual:</string>
+    <string name="get_location_btn">Obtener ubicación</string>
+    <string name="delivery_date_label">Fecha:</string>
+    <string name="delivery_time_label">Hora:</string>
+    <string name="select_date_btn">Seleccionar fecha</string>
+    <string name="select_time_btn">Seleccionar hora</string>
+    <string name="confirm_order_btn">Confirmar orden</string>
+    <string name="no_location">(Sin ubicación)</string>
+    <string name="select_date">(Seleccionar fecha)</string>
+    <string name="select_time">(Seleccionar hora)</string>
+    <string name="select_price">Precio</string>
+    <string name="type_milk_label">Tipo de leche</string>
+    <string name="btn_selected">Elegir</string>
+    <string name="btn_confirm">Confirmar Orden</string>
+    <string name="text_order">Todas tus ordenes</string>
+
+
+    <!-- Array de países -->
+    <string-array name="countrty_array">
+        <item>Ingresa tu país</item>
+        <item>México</item>
+        <item>Argentina</item>
+        <item>Colombia</item>
+        <item>Chile</item>
+        <item>Perú</item>
+        <item>España</item>
+        <item>Estados Unidos</item>
+        <item>Brasil</item>
+        <item>Canadá</item>
+        <item>Alemania</item>
+    </string-array>
+
+    <!-- Array de tamaños -->
+    <string-array name="sizes_array">
+        <item>Chico</item>
+        <item>Mediano</item>
+        <item>Grande</item>
+    </string-array>
+
+    <!-- Array de tipos de leche -->
+    <string-array name="milk_types_array">
+        <item>Entera</item>
+        <item>Deslactosada</item>
+        <item>Almendra</item>
+        <item>Soya</item>
+        <item>Coco</item>
+        <item>Avena</item>
+    </string-array>
+
+    <!-- Array de estados de orden -->
+    <string-array name="status_array">
+        <item>Comprado</item>
+        <item>Apartado</item>
+    </string-array>
+</resources>
